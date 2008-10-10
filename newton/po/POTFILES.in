@@ -1,0 +1,10 @@
+# List of source files containing translatable strings.
+# Please keep this file sorted alphabetically.
+
+data/GNOME_NewtonApplet.server.in.in
+data/GNOME_NewtonApplet.xml
+src/NewtonWikiText.py
+src/NewtonApplet.py
+src/NewtonGui.py
+data/newton.glade
+data/newton.schemas.in

@@ -1,0 +1,427 @@
+/*This CSS stylesheet began as a Dokuwiki (http://wiki.splitbrain.org/wiki:dokuwiki) stylesheet*/
+/*because I really liked the way Dokuwiki looks. I use Dokuwiki as a real shared wiki.*/
+
+/*If you would like a tutorial for CSS or would appreciate a refresher course,*/
+/*there are excellent tutorials located at http://www.w3schools.com/*/
+
+/*------ PAGE TITLE STYLE ------*/
+
+/* The page title environment (eg. [[PageTitle]]) */
+/*This is the style for the entire thing, but the text itself is */
+/*overridden in the next portion of the stylesheet.*/
+.pagename {
+        height:25px;
+        font-size:180%;
+        font-weight:bolder;
+        color:#d19972;
+        text-align:left;
+        padding:0 0 0.5cm 0;
+        padding-top: 0.25cm;
+}
+
+/*The actual title text style.*/
+span.pagename {
+        height:25px;
+        font-size:100%;
+        font-weight:bolder;
+        text-align:left;
+        padding:0 0 0.5cm 0;
+        padding-top: 0.25cm;
+        color: #767676;
+}
+
+/*The style and color of the bar that separates the page title from*/
+/*the body of the document. This is the dark portion (upper part) of*/
+/*the bar.*/
+.bar {
+	height:15px;
+	border-top:2px solid #a36d47;
+	border-bottom:1px solid #a36d47;
+	background:#d19972;
+	padding:2px;
+	margin:0;
+}
+
+/*This is the bottom part of the top bar that displays the "Last modified:"*/
+/*date. The actual text is right aligned in this stylesheet.*/
+div.modified{
+  background-color: #fff4b5;
+  text-align: right;
+  font-size:80%;
+  color: #666666;
+  padding-left: 4px;
+}
+
+
+/*------ DOCUMENT BODY STYLE ------*/
+/*The body of the document is defined here. This essentially just defines*/
+/*the basic text style and color since the other components of the document*/
+/*are defined elsewhere.*/
+body {
+  font: 80% "Bitstream Vera Sans", "Lucida Grande", Verdana, Lucida, Helvetica, Arial, sans-serif;
+  background-color: White;
+  color: Black;
+  margin: 2px;
+  padding: 2px;
+}
+
+/* This is the overall style of the document. It simply defines the margins*/
+/* and the text justification throughout.*/
+div.page {
+  margin-top: 4px;
+  margin-left:  1em;
+  margin-right: 2em;
+  text-align: justify;
+}
+
+/* Defines the paragraph style.*/
+p {
+        padding:0; 
+        margin: 1.0em 0 1.0em 0;
+}
+
+/*------ HEADERS STYLE ------*/
+
+/*The following sections define the style of the headings throughout*/
+/*the body of the document (h1 = first level header, h2 = second level, etc).*/
+
+/*First level heading*/
+h1 {
+    color: Black;
+    background-color: transparent;
+    font-family: "Lucida Grande", Verdana, Lucida, Helvetica, Arial, sans-serif;
+    margin-right:   0;
+    margin-top:     0;
+    margin-bottom:  1em;
+    padding-left:   0;
+    padding-right:  0;
+    padding-top:    0.5em;
+    padding-bottom: 0;
+    border-bottom: 1px solid #a36d47;
+    clear: left;
+    font-size: 160%; 
+    margin-left: 0px; 
+    font-weight: bold;
+}
+
+/*Second level heading*/
+h2 {
+    color: Black;
+    background-color: transparent;
+    font-family: "Lucida Grande", Verdana, Lucida, Helvetica, Arial, sans-serif;
+    font-weight: normal;
+    margin-right:   0;
+    margin-top:     0;
+    margin-bottom:  1em;
+    padding-left:   0;
+    padding-right:  0;
+    padding-top:    0.5em;
+    padding-bottom: 0;
+    border-bottom: 1px solid #a36d47;
+    clear: left;
+    font-size: 150%; 
+    margin-left: 20px;
+}
+
+/*Third level heading*/
+h3 {
+    color: Black;
+    background-color: transparent;
+    font-family: "Lucida Grande", Verdana, Lucida, Helvetica, Arial, sans-serif;
+    margin-right:   0;
+    margin-top:     0;
+    margin-bottom:  1em;
+    padding-left:   0;
+    padding-right:  0;
+    padding-top:    0.5em;
+    padding-bottom: 0;
+    clear: left;
+    font-size: 140%; 
+    margin-left: 40px; 
+    border-bottom: none; 
+    font-weight: bold;
+}
+
+/*Fourth level heading*/
+h4 {
+    color: Black;
+    background-color: transparent;
+    font-family: "Lucida Grande", Verdana, Lucida, Helvetica, Arial, sans-serif;
+    margin-right:   0;
+    margin-top:     0;
+    margin-bottom:  1em;
+    padding-left:   0;
+    padding-right:  0;
+    padding-top:    0.5em;
+    padding-bottom: 0;
+    clear: left;
+    font-size: 120%; 
+    margin-left: 60px; 
+    border-bottom: none; 
+    font-weight: bold;
+}
+
+/*Fifth level heading*/
+h5 {
+    color: Black;
+    background-color: transparent;
+    font-family: "Lucida Grande", Verdana, Lucida, Helvetica, Arial, sans-serif;
+    margin-right:   0;
+    margin-top:     0;
+    margin-bottom:  1em;
+    padding-left:   0;
+    padding-right:  0;
+    padding-top:    0.5em;
+    padding-bottom: 0;
+    clear: left;
+    font-size: 100%; 
+    margin-left: 80px; 
+    border-bottom: none; 
+    font-weight: bold;
+}
+
+/*With each section of the Newton document (ie. under each heading), is*/
+/*a level of indentation. The body under a second level heading is indented*/
+/*further than that of a first level heading, and so on. These define the*/
+/*left margin for each. One level of indentation per heading level.*/
+div.level1 {margin-left: 3px;}
+div.level2 {margin-left: 23px;}
+div.level3 {margin-left: 43px;}
+div.level4 {margin-left: 63px;}
+div.level5 {margin-left: 83px;}
+
+
+/*------ LINKS STYLE ------*/
+
+/* The base link style. By default, links to any URL are not underlined.*/
+a {
+  color:#436976;
+  text-decoration:none;
+}
+
+/* The style of a link pointing to an external website on the Internet.*/
+a.urlextern{
+    background: transparent url(@PIXMAPS_DIR@/link_icon.gif) 0px 1px no-repeat;
+    padding: 1px 0px 1px 16px;
+    color:#436976;
+    text-decoration:none;
+}
+
+/* What does the link look like when the mouse is over it?*/
+/* This is the base description of hovered links.*/
+a:hover {
+  color:#000000;
+  text-decoration:underline;
+}
+
+/* This defines what an external link looks like on hover.*/
+a.urlextern:hover {
+  text-decoration:underline;
+}
+
+/* The style of a link to a file, or other media. */
+a.media {
+  color:#436976;
+  text-decoration:none;
+}
+
+/* The style when the mouse hovers over a media link. */
+a.media:hover {
+  color:#436976;
+  text-decoration:underline
+}
+
+/* The following sections define what links to other Newton pages*/
+/* look like.*/
+
+/* An existing wiki page..*/
+a.wikilink1:link    { 
+        color:#009900; 
+        text-decoration:none 
+}
+/* An existing page with mouse hovering over it.*/
+a.wikilink1:hover   { 
+        color:#009900; 
+        text-decoration:underline 
+}
+
+/* An non-existant page in the wiki. By default, these appear red.*/
+/* This also applies to non-existant media links.*/
+a.wikilink2:link    { 
+        color:#FF3300; 
+        text-decoration:none 
+}
+
+/* A non-existant page with mouse hover.*/
+a.wikilink2:hover   { 
+        color:#FF3300; 
+        text-decoration:underline 
+}
+
+/* Defines a media link which points to an existing file.*/
+a.wikilink3:link    { 
+        color:#436976; 
+        text-decoration:none 
+}
+
+/* Link to an existing media, with mouse hover.*/
+a.wikilink3:hover   { 
+        color:#436976; 
+        text-decoration:underline 
+}
+
+/* Links to embedded email addresses. */
+a.mail {
+  background: transparent url(@PIXMAPS_DIR@/mail_icon.gif) 0px 1px no-repeat;
+  padding: 1px 0px 1px 16px;
+  color:#436976;
+  text-decoration:none;
+}
+
+/* Email addresses with mouse hover. */
+a.mail:hover {
+  text-decoration:underline;
+}
+
+
+/*------ EMBEDDED MEDIA STYLE ------*/
+
+/* Base definition for embedded images. By default, just sets*/
+/* the border to nothing.*/
+img {
+        border:0
+}
+
+/* Plain image definition used when the image is centered.*/
+img.media {
+  margin: 3px;
+}
+
+/* The image float left style.*/
+img.medialeft {
+  margin: 0 1.5em 0 0;
+  border: 0;
+  float: left;
+}
+
+.medialeft {
+  margin: 0 1.5em 0 0;
+  border: 0;
+  float: left;
+}
+
+/* The image float right style.*/
+img.mediaright {
+  margin: 0 0 0 1.5em;
+  border: 0;
+  float: right;
+}
+
+.mediaright {
+  margin: 0 0 0 1.5em;
+  border: 0;
+  float: right;
+}
+
+/* The style of the image caption.*/
+.image-caption {
+ color: #555;
+ font-size: small;
+ font-style: italic;
+ text-align: center;
+}
+
+/*------ LISTS STYLE ------*/
+
+/* The style for an unordered list as found in a regular Newton page document.*/
+ul { 
+  line-height: 1.5em;
+  list-style-position: inside;
+  list-style-type: disc;
+  color: #986746;
+  margin: 0.5em 0 0.5em 1.5em;
+  padding: 0;
+}
+
+/* The style for the Category List when a category is clicked on in the tree.*/
+ul.catlist {
+  line-height: 1.2em;
+  color: #986746;
+  margin: 0.5em 0 0.5em 3.5em;
+  padding: 0;
+  list-style-type: disc;
+}
+
+/* The style for an ordered list in a Newton document.*/
+ol {
+  line-height: 1.5em;
+  list-style-position: inside;
+  margin: 0.5em 0 0.5em 1.5em;
+  padding: 0;
+  color: #986746;
+}
+
+/* In a list, the bullet or number is a different color than the */
+/* actual text. This is the style for the text.*/
+span.li {
+  color: #000000;
+  font-weight: normal;
+}
+
+/* In a page that displays a category listing, there are two types of */
+/* list item. One is for a category (which displays a folder icon), and*/
+/* the other is for a page (which displays a page icon).*/
+
+/* The following two definitions define the category and page list*/
+/* items respectfully.*/
+li.category {
+  background: transparent url(@PIXMAPS_DIR@/category.png) 0px 1px no-repeat;
+  font-size: 110%;
+  padding: 1px 0px 1px 18px;
+}
+
+li.page {
+  background: transparent url(@PIXMAPS_DIR@/page.png) 0px 1px no-repeat;
+  font-size: 110%;
+  padding: 1px 0px 1px 18px;
+}
+
+/*------ PRE-FORMATTED TEXT STYLE ------*/
+
+/* This defines how code blocks look, or preformatted text blocks.*/
+pre.pre {
+  font-family: mono;
+  padding: 0.5em;
+  border: 1px dashed #a36d47;
+  color: Black;
+  background-color: #fff4b5;
+  overflow: auto;
+  font-weight: normal;
+}
+
+code {
+  font-family: mono;
+}
+
+/*------ MISCELLANEOUS STYLES ------*/
+
+/* This defines what a horizontal rule or line looks like.*/
+hr {
+  border: 0px;
+  border-top: 1px solid #a36d47;
+  text-align:center;
+  height: 0px;
+}
+
+/* This defines what color searched text appears in. By default,*/
+/* it is a bright, light green.*/
+span.search {
+    background: #3DFE40;
+}
+
+/* This is an invisible line at the bottom of every document that */
+/* ensures that things like embedded images do not hang below the bottom*/
+/* border of the page. You should typically have no need to edit this*/
+/* style.*/
+div.clearer {clear: both; line-height: 0; height: 0;}
+

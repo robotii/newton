@@ -1,0 +1,18 @@
+newton (0.0.9-2) unstable; urgency=low
+
+  * avoid the evil gtkspell bug
+
+ -- Dennis Craven <dcraven@gmail.com>  Sun, 19 Jun 2005 21:56:16 -0400
+
+newton (0.0.9-1) unstable; urgency=low
+
+  * New upstream release
+
+ -- Dennis Craven <dcraven@gmail.com>  Sat, 18 Jun 2005 21:56:16 -0400
+
+newton (0.0.8-1) unstable; urgency=low
+
+  * Initial Release.
+
+ -- Dennis Craven <dcraven@gmail.com>  Wed, 15 Jun 2005 19:44:27 -0400
+

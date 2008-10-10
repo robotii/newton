@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE language SYSTEM "language.dtd">
+<language _name="Newton" version="1.0" _section="Applications" mimetypes="text/x-newton;application/x-newton">
+
+	<escape-char>!</escape-char>
+
+        <line-comment name = "Heading" style = "Keyword">
+                <start-regex>^\={1,5}</start-regex>
+        </line-comment>
+
+        <string name = "Bold" style = "Others">
+                <start-regex> \*\*</start-regex>
+                <end-regex>\*\*</end-regex>
+        </string>
+
+        <string name = "Italic" style = "Others">
+                <start-regex>\s\/\/</start-regex>
+                <end-regex>\/\/</end-regex>
+        </string>
+
+        <string name = "Underline" style = "Others">
+                <start-regex> \_\_</start-regex>
+                <end-regex>\_\_</end-regex>
+        </string>
+
+        <string name = "Monospace" style = "Others 3">
+                <start-regex> &apos;&apos;</start-regex>
+                <end-regex>&apos;&apos;</end-regex>
+        </string>
+
+	<pattern-item name = "Unordered List" style = "Keyword">
+		<regex>^\*+</regex>
+	</pattern-item>
+
+	<pattern-item name = "Ordered List" style = "Keyword">
+		<regex>^#+</regex>
+	</pattern-item>
+
+        <line-comment name = "Code Block" style = "Preprocessor">
+                <start-regex>^  </start-regex>
+        </line-comment>
+
+        <string name = "Framed Code Block" style = "Preprocessor" end-at-line-end = "FALSE">
+                <start-regex>^%%%</start-regex>
+                <end-regex>^%%%</end-regex>
+        </string>
+
+        <string name = "Bracketed External" style = "Comment">
+                <start-regex>\[\[http</start-regex>
+                <end-regex>\S\]\]</end-regex>
+        </string>
+
+
+        <string name = "Bracketed Link" style = "Function">
+                <start-regex>\[\[\S</start-regex>
+                <end-regex>\S\]\]</end-regex>
+        </string>
+
+        <string name = "Media Link" style = "Function">
+                <start-regex>\{\{</start-regex>
+                <end-regex>\}\}</end-regex>
+        </string>
+
+<!--                <start-regex>[ABCDEFGHIJKLMNOPQRSTUVWXYZ]+([abcdefghijklmnopqrstuvwxyz]+[ABCDEFGHIJKLMNOPQRSTUVWXYZ]+)+</start-regex>-->
+        <string name = "CamelCase Link" style = "Function" case-sensitive = "TRUE" match-empty-string-at-end = "TRUE">
+                <start-regex>[ABCDEFGHIJKLMNOPQRSTUVWXYZ]+[abcdefghijklmnopqrstuvwxyz0123456789(::)]+[ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789(::)]+[ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789(::)]*</start-regex>
+                <end-regex>[\b ]</end-regex>
+        </string>
+
+        <pattern-item name = "Email" style = "Comment">
+                <regex>\b[A-Z0-9._%-]+@[A-Z0-9._%-]+\.[A-Z]{2,4}\b</regex>
+        </pattern-item>
+
+        <pattern-item name = "Link" style = "Comment">
+                <regex>(ftp|http|https)://\S*</regex>
+        </pattern-item>
+
+</language>

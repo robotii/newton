@@ -1,0 +1,17 @@
+# -*- coding: utf-8 -*-
+import os, sys
+
+NAME = 'Newton'
+VERSION = '@VERSION@'
+SERVERS_DIR = '@prefix@/lib/bonobo/servers'
+GLADE_DIR = '@prefix@/@DATADIRNAME@/newton'
+DATA_DIR = '@prefix@/@DATADIRNAME@/newton'
+PIXMAPS_DIR = '@prefix@/@DATADIRNAME@/newton/pixmaps'
+UI_DIR = '@prefix@/@DATADIRNAME@/gnome-2.0/ui'
+LOCALE_DIR = '@prefix@/@DATADIRNAME@/locale'
+
+WIKI_DIR = '%s/.newton/' % os.getenv('HOME')
+WIKI_DATA = '%s/.newton/data/' % os.getenv('HOME')
+WIKI_MEDIA = '%s/.newton/media/' % os.getenv('HOME')
+WIKI_STYLES = '%s/.newton/styles/' % os.getenv('HOME')
+WIKI_HOME = '%sNewtonHome' % WIKI_DATA

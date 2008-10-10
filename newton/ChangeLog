@@ -1,0 +1,180 @@
+2005-09-30  Dennis Craven <dcraven@gmail.com>
+
+	* add link to homepage in Help menu
+	* add syntax highlighting to editor
+	* make editor use the GNOME monospace font
+
+2005-09-29  Dennis Craven <dcraven@gmail.com>
+
+	* when red wiki link is clicked, assume the page name (#21)
+	* on rename, check for new name uniqueness (#49)
+	* populate rename dialog with current name by default (#46)
+
+2005-09-26  Dennis Craven <dcraven@gmail.com>
+
+	* if text is selected, instant apply tags when BIU is clicked (#26)
+	* only enable inline addressbar completion if gtk >= 2.8.0 (#22)
+	* don't expand all categories when dragging into one (#19)
+	* make search results point to the correct locations (#38)	
+
+2005-09-25  Dennis Craven <dcraven@gmail.com>
+
+	* fix simple formatting when it comprises entire line (#36)
+
+2005-09-05  Dennis Craven <dcraven@gmail.com>
+
+	* add a backup data entry to File menu
+	* escape CamelCase links by prepending a !
+	* implement auto-emails
+	* reimplement autolinking URLs
+	* move and hide address bar in BrowserWidget
+
+2005-09-04  Dennis Craven <dcraven@gmail.com>
+
+	* add inline completion and other friendliness to address bar
+	* add address bar just for kicks
+	* add caption to ImageInsert dialog
+	* modularize Alerts and Dialogs
+	* redo ImageInsert dialog in glade
+	* disable Edit when category is selected
+	* add clipboard functionality to editor
+
+2005-09-02  Dennis Craven <dcraven@gmail.com>
+
+	* make Newton work as standalone application
+
+2005-09-01  Dennis Craven <dcraven@gmail.com>
+
+	* clean up and document default CSS stylesheets
+
+2005-08-29  Dennis Craven <dcraven@gmail.com>
+
+	* more intelligent link renaming
+	* only allow a single | in links
+	* simple data validation on startup
+	* break up NewtonHome and NewtonSyntax for translators
+	* added autolinking for http, https, and ftp URLs
+
+2005-08-27  Dennis Craven <dcraven@gmail.com>
+
+	* save window state (maximized) between sessions
+
+2005-08-26  Dennis Craven <dcraven@gmail.com>
+
+	* let images have caption
+	* strip html tags from URL descriptions
+	* make list bullets and number inside to avoid cropping
+
+2005-08-14  Dennis Craven <dcraven@gmail.com>
+
+	* format hotkeys implemented
+	* remove escaped chars from NewtonSyntax text
+
+2005-07-16  Dennis Craven <dcraven@gmail.com>
+
+	* category support implemented (but buggy)
+
+2005-07-07  Dennis Craven <dcraven@gmail.com>
+
+	* add '%%%' syntax for codeblocks
+
+2005-06-30  Dennis Craven <dcraven@gmail.com>
+
+	* make < and > appear properly in code block (thanks Fabrizio)
+
+2005-06-27  Dennis Craven <dcraven@gmail.com>
+
+	* press enter to begin editing current page
+	* category support implemented
+
+2005-06-24  Dennis Craven <dcraven@gmail.com>
+
+	* make ~/ expand to home dir in media links
+
+2005-06-23  Dennis Craven <dcraven@gmail.com>
+
+	* move NewtonHome, NewtonSyntax, and styles to $(datadir) as full
+	files
+	* make files with spaces and/or punctuation open too
+	* bump version to 0.1
+
+2005-06-22  Dennis Craven <dcraven@gmail.com>
+
+	* make schema install to /usr/share/gconf/schemas (.deb)
+	* install components to FHS friendly dirs
+
+2005-06-21  Dennis Craven <dcraven@gmail.com>
+
+	* confirm on cancel of modified buffer
+
+2005-06-16  Dennis Craven <dcraven@gmail.com>
+
+	* don't specify font size for monospace in edit view
+	* remove dependancy on pil
+	* use font-family instead of font in CSS for codeblock (thanks Artis)
+
+2005-06-16  Dennis Craven <dcraven@gmail.com>
+	
+	* make lists containing code blocks work
+	* make code blocks not ignore leading whitespace
+	* bump version to 0.0.9
+
+2005-06-03  Dennis Craven <dcraven@gmail.com>
+
+	* add option to fix wiki links due to page rename
+	* make dialog labels selectable as per HIG
+
+2005-06-03  Dennis Craven <dcraven@gmail.com>
+
+	* add gtkspell capability
+	* add "Enable spell check" to preferences
+	* create preferences dialog only once
+	* present window if already active, but not on top of stack
+	* ready all strings for internationalization
+	* select wiki page under cursor when right-clicked on tree
+	* rename a wiki page
+	* update relevant links in other pages when a page is renamed
+
+2005-06-02  Dennis Craven <dcraven@gmail.com>
+	
+	* position images in document
+	* scale images in document
+	* add image insertion tool in edit toobar
+	* make an ugly dialog to aid in the insertion of images
+	* update NewtonSyntax with newer features
+	* version bump to 0.0.8-test
+	* make applet appear as a flat image instead of toggle button
+	* add context menu to tree list
+
+2005-06-01  Dennis Craven <dcraven@gmail.com>
+
+	* link to any local file (no more "Upload Media" stuff)
+	* embed remote or local images in documents
+	* add clearer div to stylesheets
+	* version bump to 0.0.8 
+
+2005-05-31  Dennis Craven <dcraven@gmail.com>
+
+	* add edit toolbar to edit widget
+	* add ability to insert current date
+	* add ability to insert current time
+	* add bold, italic, underline, and strikethrough to edit toolbar
+	* add web link creation tool to edit toolbar
+	* add email link creation tool to edit toolbar
+	* fix link-message for email addresses
+
+2005-05-30  Dennis Craven <dcraven@gmail.com>
+
+	* search (find) feature added to toolbar
+	* version bump to 0.0.7
+	* allow lists to decrement more than one level
+
+2005-05-26  Dennis Craven <dcraven@gmail.com>
+
+	* make applet and icon resize with panel
+	* don't overwrite NewtonHome page when installing new version
+
+2005-05-25 Dennis Craven <dcraven@gmail.com>
+
+	* export page to HTML
+

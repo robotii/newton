@@ -1,0 +1,74 @@
+<ui>
+  <menubar name='Menubar'>
+    <menu name='File' action='FileMenu'>
+      <menuitem action='NewPage' />
+      <menuitem action='NewCategory' />
+      <menuitem action='Edit' />
+      <separator />
+      <menu name='Export' action="ExportMenu">
+        <menuitem action="ExportHTML" />
+      </menu>
+      <separator />
+      <menuitem action='Rename' />
+      <menuitem action='Delete' />
+      <separator />
+      <menuitem action='Backup' />
+    </menu>
+    <menu action='EditMenu'>
+      <menuitem action='Save' />
+      <menuitem action='CancelEdit' />
+      <separator />
+      <menuitem action='Find' />
+      <separator />
+      <menuitem action='Preferences' />
+    </menu>
+    <menu action='GoMenu'>
+      <menuitem action='Back' />
+      <menuitem action='Forward' />
+      <menuitem action='Home' />
+      <menuitem action='Refresh' />
+    </menu>
+    <menu action='HelpMenu'>
+      <menuitem action='About' />
+      <menuitem action='Website' />
+    </menu>
+  </menubar>
+
+  <toolbar name='Toolbar'>
+    <toolitem action='Back' />
+    <toolitem action='Forward' />
+    <toolitem action='Home' />
+    <toolitem action='Refresh' />
+  </toolbar>
+
+  <toolbar name='EditTools'>
+    <toolitem action='Bold' />
+    <toolitem action='Italic' />
+    <toolitem action='Underline' />
+    <toolitem action='Strikethrough' />
+    <separator />
+    <toolitem action='Copy' />
+    <toolitem action='Cut' />
+    <toolitem action='Paste' />
+    <separator />
+    <toolitem action='WebLink' />
+    <toolitem action='EmailLink' />
+    <toolitem action='MediaLink' />
+    <toolitem action='ImageLink' />
+    <separator />
+    <toolitem action='Date' />
+    <toolitem action='Time' />
+  </toolbar>
+
+  <popup name='TreePopup' action='TreePopup'>
+    <menuitem action='NewPage' />
+    <menuitem action='NewCategory' />
+    <separator />
+    <menuitem action='Delete' />
+    <menuitem action='Rename' />
+    <separator />
+    <menu name='Export' action="ExportMenu">
+      <menuitem action="ExportHTML" />
+    </menu>
+  </popup>
+</ui>

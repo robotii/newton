@@ -1,0 +1,103 @@
+<gconfschemafile>
+    <schemalist>
+        <schema>
+            <key>/schemas/apps/newton/appearance/stylesheet</key>
+            <applyto>/apps/newton/appearance/stylesheet</applyto>
+            <owner>newton</owner>
+            <type>string</type>
+            <default>Blue</default>
+            <locale name="C">
+                <short>Style</short>
+                <long>The CSS style to be used for rendering pages.</long>
+            </locale>
+        </schema>
+        <schema>
+            <key>/schemas/apps/newton/behavior/ignore_camelcase</key>
+            <applyto>/apps/newton/behavior/ignore_camelcase</applyto>
+            <owner>newton</owner>
+            <type>bool</type>
+            <default>false</default>
+            <locale name="C">
+                <short>Ignore CamelCase</short>
+                <long>Whether or not to make CamelCase words into links.</long>
+            </locale>
+        </schema>
+        <schema>
+            <key>/schemas/apps/newton/general/show_treeview</key>
+            <applyto>/apps/newton/general/show_treeview</applyto>
+            <owner>newton</owner>
+            <type>bool</type>
+            <default>true</default>
+            <locale name="C">
+                <short>Show treeview</short>
+                <long>Show treeview.</long>
+            </locale>
+        </schema>
+        <schema>
+            <key>/schemas/apps/newton/general/window_maximized</key>
+            <applyto>/apps/newton/general/window_maximized</applyto>
+            <owner>newton</owner>
+            <type>bool</type>
+            <default>False</default>
+            <locale name="C">
+                <short>Is the window maximized?</short>
+                <long>Whether or not the main window is maximized.</long>
+            </locale>
+        </schema>
+        <schema>
+            <key>/schemas/apps/newton/general/window_size_x</key>
+            <applyto>/apps/newton/general/window_size_x</applyto>
+            <owner>newton</owner>
+            <type>int</type>
+            <default>750</default>
+            <locale name="C">
+                <short>Window width</short>
+                <long>The width of the main browser window.</long>
+            </locale>
+        </schema>
+        <schema>
+            <key>/schemas/apps/newton/general/window_size_y</key>
+            <applyto>/apps/newton/general/window_size_y</applyto>
+            <owner>newton</owner>
+            <type>int</type>
+            <default>500</default>
+            <locale name="C">
+                <short>Window height</short>
+                <long>The height of the main browser window.</long>
+            </locale>
+        </schema>
+        <schema>
+            <key>/schemas/apps/newton/general/window_position_x</key>
+            <applyto>/apps/newton/general/window_position_x</applyto>
+            <owner>newton</owner>
+            <type>int</type>
+            <default>200</default>
+            <locale name="C">
+                <short>Window X position</short>
+                <long>The X position of the main browser window.</long>
+            </locale>
+        </schema>
+        <schema>
+            <key>/schemas/apps/newton/general/window_position_y</key>
+            <applyto>/apps/newton/general/window_position_y</applyto>
+            <owner>newton</owner>
+            <type>int</type>
+            <default>120</default>
+            <locale name="C">
+                <short>Window Y position</short>
+                <long>The Y position of the main browser window.</long>
+            </locale>
+        </schema>
+        <schema>
+            <key>/schemas/apps/newton/general/hpaned_position</key>
+            <applyto>/apps/newton/general/hpaned_position</applyto>
+            <owner>newton</owner>
+            <type>int</type>
+            <default>150</default>
+            <locale name="C">
+                <short>Position of the main hpaned widget.</short>
+                <long>The position of the main hpaned widget, or width of treeview.</long>
+            </locale>
+        </schema>
+    </schemalist>
+</gconfschemafile>

@@ -1,0 +1,12 @@
+[Desktop Entry]
+Name=Newton Desktop Wiki
+GenericName=Desktop Wiki
+Version=@VERSION@
+Comment=Organize and compose rich HTML documents
+Encoding=UTF-8
+Exec=newton
+Icon=newton.svg
+Terminal=false
+Type=Application
+Categories=Application;Utility;GNOME;GTK;
+StartupNotify=true

@@ -1,0 +1,17 @@
+Source: newton
+Section: x11
+Priority: optional
+Maintainer: Dennis Craven <dcraven@gmail.com>
+Build-Depends: debhelper (>= 4.0.0), python-gnome2-dev, python-gnome2-extras-dev, python-gtk2-dev, libgtk2.0-dev, libglade2-dev, gnome-common, libxml-parser-perl
+Standards-Version: 3.6.1
+
+Package: newton
+Architecture: all
+Depends: ${shlibs:Depends}, ${misc:Depends}, ${python:Depends}, python (>= 2.3), python-gnome2, python-gnome2-extras, python-glade2, python-gtk2
+Description: personal desktop wiki applet for GNOME2
+ Newton is a applet for the GNOME2 Desktop Environment that can be used to
+ create a personal, serverless wiki. Content is added using a simple wiki-like
+ syntax, then rendered in XHTML and rich CSS in an embedded Gecko powered
+ canvas. Links to external websites are followed by your default browser.
+ Remote and local images are easily embedded in the document in various
+ positions. Wiki pages are organized in a list view for quick access.
